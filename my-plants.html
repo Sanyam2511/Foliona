@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Plants | Foliona</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🌱 Foliona</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="#">Forum</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="my-plants-page">
+    <section class="user-plants">
+      <h2>My Plants</h2>
+      <p class="subheading">All the plants you care for — tracked in one place.</p>
+
+      <div class="plant-card-container">
+       
+      </div>
+    </section>
+
+    <section class="plant-overview-dashboard">
+  <h2>Plant Overview</h2>
+  <div class="dashboard-stats">
+    <div class="stat-item">
+      <h3>Total Plants</h3>
+      <p id="total-plants">0</p>
+    </div>
+    <div class="stat-item">
+      <h3>Plants Added Last 7 Days</h3>
+      <p id="recent-plants">0</p>
+    </div>
+    <div class="stat-item">
+      <h3>Plant Types</h3>
+      <ul id="plant-type-list"></ul>
+    </div>
+  </div>
+</section>
+
+
+    <section class="add-plant-form-section">
+      <h2>Add a Plant</h2>
+      <p class="subheading">Add a plant to your care list and get smart suggestions.</p>
+
+      <form class="add-plant-form">
+        <label for="plantName">Plant Name</label>
+        <input type="text" id="plantName" name="plantName" required />
+
+        <label for="plantImageUrl">Image URL</label>
+        <input type="url" id="plantImageUrl" name="plantImageUrl" placeholder="https://example.com/plant.jpg" required />
+
+        <label for="plantType">Plant Type</label>
+        <input type="text" id="plantType" name="plantType" placeholder="e.g. Indoor, Outdoor" />
+
+        <label for="description">Short Description</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <button type="submit">Add Plant</button>
+      </form>
+    </section>
+  </main>
+  <script src="myplants.js"></script>
+</body>
+</html>

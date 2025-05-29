@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ancizar Sans';
+  background-color: #f0f9f4;
+  color: #2f4f4f;
+  line-height: 1.6;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #c9eaae;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to right, #cce9bd, #d0f0c0);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1b5e20;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  margin: 20px;
+  float: left;
+  clear: left;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: #2e7d32; 
+  font-family: 'Ancizar Sans';
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f0f8f4; 
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #2e7d32;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.dropdown-content a:hover {
+  background-color: #d0e8d5;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #1b5e20;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #d7f5db;
+  color: #33691e;
+  clear:left;
+}
+
+.plant-list-section {
+  padding: 3rem 2rem;
+  background-color: #f0f9f4;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 2rem;
+}
+
+.plant-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.plant-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.plant-card:hover {
+  transform: translateY(-5px);
+}
+
+.plant-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.plant-info {
+  padding: 1rem;
+}
+
+.plant-info h3 {
+  color: #388e3c;
+  margin-bottom: 0.5rem;
+}
+
+.plant-info p {
+  color: #4e684e;
+  font-size: 0.95rem;
+}
+
+.my-plants-page {
+  padding: 2rem;
+  background-color: #f0f9f4;
+}
+
+.user-plants h2,
+.add-plant-form-section h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  color: #4e684e;
+  margin-bottom: 1.5rem;
+}
+
+.add-plant-form-section {
+  background-color: #e6f5e9;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 2rem auto;
+
+}
+
+.add-plant-form label {
+  display: block;
+  margin-top: 1rem;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.add-plant-form input,
+.add-plant-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #b2dfdb;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 1rem;
+}
+
+.add-plant-form button {
+  margin-top: 1.5rem;
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-plant-form button:hover {
+  background-color: #388e3c;
+}
+
+.marketplace-header {
+  background-color: #c8e6c9;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.marketplace-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.search-bar {
+  margin-top: 10px;
+  padding: 10px;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 25px;
+  border: 1px solid #aaa;
+  outline: none;
+}
+
+.marketplace-nav {
+  background-color: #a5d6a7;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px 10px;
+}
+
+.marketplace-nav a {
+  text-decoration: none;
+  color: #2f4f4f;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background-color: #dcedc8;
+  transition: background 0.3s;
+}
+
+.marketplace-nav a:hover {
+  background-color: #aed581;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
+  color: #2e7d32;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #388e3c;
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #81c784;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #66bb6a;
+}
+
+.delete-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #654034;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #8a0202;
+}
+
+.plant-overview-dashboard {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #f0f9f3;
+  border-radius: 10px;
+}
+
+.dashboard-stats {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  flex: 1 1 150px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+.stat-item h3 {
+  margin-bottom: 0.5rem;
+}
+
+#plant-type-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#plant-type-list li {
+  margin-bottom: 0.25rem;
+}
