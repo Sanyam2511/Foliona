@@ -1,388 +1,510 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Ancizar Sans';
-  background-color: #f0f9f4;
-  color: #2f4f4f;
-  line-height: 1.6;
+    font-family: 'Ancizar Sans';
+    background-color: #f0f9f4;
+    color: #2f4f4f;
+    line-height: 1.6;
 }
 
+/* Navbar */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 2rem;
-  background-color: #c9eaae;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background-color: #c9eaae;
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #2e7d32;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2e7d32;
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #2e7d32;
-  font-weight: 500;
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: 500;
 }
 
+/* Hamburger menu icon (hidden by default on desktop) */
+.menu-toggle {
+    display: none; /* Hide on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #2e7d32;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hero Section */
 .hero {
-  text-align: center;
-  padding: 5rem 2rem;
-  background: linear-gradient(to right, #cce9bd, #d0f0c0);
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(to right, #cce9bd, #d0f0c0);
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #1b5e20;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1b5e20;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .cta-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
+    background-color: #4caf50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 0 0.5rem; /* Add some spacing between buttons */
 }
 
+/* Dropdowns */
 .dropdown {
-  position: relative;
-  display: flex;
-  margin: 20px;
-  float: left;
-  clear: left;
+    position: relative;
+    display: flex;
+    margin: 20px;
+    float: left;
+    clear: left;
 }
 
 .dropbtn {
-  background-color: transparent;
-  color: #2e7d32; 
-  font-family: 'Ancizar Sans';
-  font-size: 24px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
+    background-color: transparent;
+    color: #2e7d32;
+    font-family: 'Ancizar Sans';
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f0f8f4; 
-  min-width: 180px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f0f8f4;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-  color: #2e7d32;
-  padding: 10px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
+    color: #2e7d32;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
 }
 
 .dropdown-content a:hover {
-  background-color: #d0e8d5;
+    background-color: #d0e8d5;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 .dropdown:hover .dropbtn {
-  color: #1b5e20;
+    color: #1b5e20;
 }
 
+/* Footer */
 footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: #d7f5db;
-  color: #33691e;
-  clear:left;
+    text-align: center;
+    padding: 2rem;
+    background-color: #d7f5db;
+    color: #33691e;
+    clear: left;
 }
 
+/* Plant List Section */
 .plant-list-section {
-  padding: 3rem 2rem;
-  background-color: #f0f9f4;
+    padding: 3rem 2rem;
+    background-color: #f0f9f4;
 }
 
 .section-title {
-  text-align: center;
-  font-size: 2rem;
-  color: #2e7d32;
-  margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 2rem;
 }
 
 .plant-card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default for larger screens */
+    gap: 2rem;
 }
 
 .plant-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  transition: transform 0.2s ease-in-out;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
 }
 
 .plant-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .plant-image {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
 }
 
 .plant-info {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .plant-info h3 {
-  color: #388e3c;
-  margin-bottom: 0.5rem;
+    color: #388e3c;
+    margin-bottom: 0.5rem;
 }
 
 .plant-info p {
-  color: #4e684e;
-  font-size: 0.95rem;
+    color: #4e684e;
+    font-size: 0.95rem;
 }
 
+/* My Plants Page */
 .my-plants-page {
-  padding: 2rem;
-  background-color: #f0f9f4;
+    padding: 2rem;
+    background-color: #f0f9f4;
 }
 
 .user-plants h2,
 .add-plant-form-section h2 {
-  font-size: 2rem;
-  color: #2e7d32;
-  margin-bottom: 0.5rem;
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
 }
 
 .subheading {
-  color: #4e684e;
-  margin-bottom: 1.5rem;
+    color: #4e684e;
+    margin-bottom: 1.5rem;
 }
 
 .add-plant-form-section {
-  background-color: #e6f5e9;
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 600px;
-  margin: 2rem auto;
-
+    background-color: #e6f5e9;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 2rem auto;
 }
 
 .add-plant-form label {
-  display: block;
-  margin-top: 1rem;
-  color: #2e7d32;
-  font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+    color: #2e7d32;
+    font-weight: bold;
 }
 
 .add-plant-form input,
 .add-plant-form textarea {
-  width: 100%;
-  padding: 0.8rem;
-  margin-top: 0.5rem;
-  border: 1px solid #b2dfdb;
-  border-radius: 8px;
-  background-color: #ffffff;
-  font-size: 1rem;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #b2dfdb;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 1rem;
 }
 
 .add-plant-form button {
-  margin-top: 1.5rem;
-  background-color: #66bb6a;
-  color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    margin-top: 1.5rem;
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .add-plant-form button:hover {
-  background-color: #388e3c;
+    background-color: #388e3c;
 }
 
+/* Marketplace Styles */
 .marketplace-header {
-  background-color: #c8e6c9;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #c8e6c9;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .marketplace-header h1 {
-  margin: 0;
-  font-size: 2rem;
+    margin: 0;
+    font-size: 2rem;
 }
 
 .search-bar {
-  margin-top: 10px;
-  padding: 10px;
-  width: 60%;
-  max-width: 500px;
-  border-radius: 25px;
-  border: 1px solid #aaa;
-  outline: none;
+    margin-top: 10px;
+    padding: 10px;
+    width: 60%;
+    max-width: 500px;
+    border-radius: 25px;
+    border: 1px solid #aaa;
+    outline: none;
 }
 
 .marketplace-nav {
-  background-color: #a5d6a7;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding: 15px 10px;
+    background-color: #a5d6a7;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 10px;
 }
 
 .marketplace-nav a {
-  text-decoration: none;
-  color: #2f4f4f;
-  padding: 8px 15px;
-  border-radius: 20px;
-  background-color: #dcedc8;
-  transition: background 0.3s;
+    text-decoration: none;
+    color: #2f4f4f;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #dcedc8;
+    transition: background 0.3s;
 }
 
 .marketplace-nav a:hover {
-  background-color: #aed581;
+    background-color: #aed581;
 }
 
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 30px;
 }
 
 .product-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  text-align: center;
-  padding: 15px;
-  transition: transform 0.3s;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .product-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .product-card h3 {
-  margin: 15px 0 10px;
-  font-size: 1.2rem;
-  color: #2e7d32;
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+    color: #2e7d32;
 }
 
 .product-card p {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
 }
 
 .price {
-  font-weight: bold;
-  color: #388e3c;
-  display: block;
-  margin-bottom: 10px;
+    font-weight: bold;
+    color: #388e3c;
+    display: block;
+    margin-bottom: 10px;
 }
 
 button {
-  padding: 10px 15px;
-  background-color: #81c784;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
+    padding: 10px 15px;
+    background-color: #81c784;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #66bb6a;
+    background-color: #66bb6a;
 }
 
 .delete-btn {
-  margin-top: 10px;
-  padding: 6px 12px;
-  background-color: #654034;
-  border: none;
-  border-radius: 6px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.2s ease;
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #654034;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
 }
 
 .delete-btn:hover {
-  background-color: #8a0202;
+    background-color: #8a0202;
 }
 
 .plant-overview-dashboard {
-  margin: 2rem 0;
-  padding: 1rem;
-  background-color: #f0f9f3;
-  border-radius: 10px;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f0f9f3;
+    border-radius: 10px;
 }
 
 .dashboard-stats {
-  display: flex;
-  gap: 3rem;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .stat-item {
-  flex: 1 1 150px;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+    flex: 1 1 150px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
 }
 
 .stat-item h3 {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 #plant-type-list {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 #plant-type-list li {
-  margin-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #c9eaae;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        padding: 1rem 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar {
+        padding: 1rem 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        display: block;
+        margin: 1rem auto; 
+        max-width: 200px;
+    }
+
+    .plant-card-container {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1.5rem;
+    }
+
+    .dropdown {
+        width: 100%;
+        float: none;
+        clear: both;
+        margin: 10px 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .plant-card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        margin-left: auto; 
+        order: 2; 
+    }
+
+    .nav-links.active {
+        top: 90px;
+    }
 }
